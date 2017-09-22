@@ -1,0 +1,30 @@
+h1, p {
+  font-family: Lato;
+}
+
+.node, .leaf {
+  padding-left: 20px;
+}
+
+.expanded::before {
+	content: "\25BC";
+}
+
+ 
+.collapsed::before {
+	content: "\25BA";
+}
+
+.hightlight {
+  animation: colorchange 5s;  
+  -webkit-animation: colorchange 5s;
+}
+
+@keyframes colorchange
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: initial;}
+}
